@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>index</title>
+	<link rel="icon" type="image/jpg" href="images/dinner-menu-icon-27.jpg">
+
+<style type="text/css">
+		 
+body {
+   
+    font-size: 15px;
+    font-family: 'Rubik', sans-serif;
+    line-height: 1.80857;
+	margin: -8px;
+	margin-left: -8px;
+}
+
+
+
+a {
+    color: #1f1f1f;
+    text-decoration: none !important;
+    outline: none !important;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.h1Live{
+	cursor: pointer;
+	color: #424242;
+	transition: .5s;
+}
+.h1Live:hover{
+	color:rgb(6, 6, 6);
+	/*text-shadow: 0 0 5px #ff0033,
+				0 0 25px #ff0033,
+				0 0 50px #ff0033,
+				0 0 100px #ff0033;*/
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: 0;
+    font-weight: normal;
+    position: relative;
+    padding: 0 0 10px 0;
+    font-weight: normal;
+    line-height: 120% !important;
+    color: #1f1f1f;
+    margin: 0
+}
+
+h1 {
+    font-size: 24px
+}
+
+h2 {
+    font-size: 22px
+}
+
+h3 {
+    font-size: 18px
+}
+
+h4 {
+    font-size: 16px
+}
+
+h5 {
+    font-size: 14px
+}
+
+h6 {
+    font-size: 13px
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    color: #212121;
+    text-decoration: none!important;
+    opacity: 1
+}
+
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+    opacity: .8
+}
+
+<!--SlideShow Start-->
+.slideshow-container {
+  max-width: 100%;
+  max-height: 200px;
+  position: relative;
+  margin: auto;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 100%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+<!--SlideShow End-->
+
+
+
+a,
+.btn {
+    text-decoration: none !important;
+    outline: none !important;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.btn-custom {
+    margin-top: 20px;
+    background-color: transparent !important;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 12px 40px;
+    font-size: 16px;
+}
+
+.lead {
+    font-size: 18px;
+    line-height: 30px;
+    color: #9c9c9c;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            background-color: rgb(255, 255, 255);
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a,
+        .dropbtn {
+            display: inline-block;
+            color: rgb(0, 0, 0);
+			font-size: 17px;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        li a:hover,
+        .dropdown:hover .dropbtn {
+			font-size: 17px;
+           /* background-color: rgb(255, 0, 0);*/
+			background-color: #ff0000;
+        }
+        
+        li .dropdown {
+            display: inline-block;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 100;
+		
+        }
+        
+        .dropdown-content a {
+            display: block;
+            color: black;
+            padding: 12px 11.5px;
+            text-decoration: none;
+            text-align: left;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    
+@media (max-width: 1200px){
+}
+     
+@media (min-width: 400px){
+
+}
+
+
+.img-fluid{
+	height: 30%;
+	width: 40%;
+}
+.about-section-box .img-fluid{
+	box-shadow: 20px 20px 0px #ff0000;
+	height: 350px;
+	width : 500px;
+}
+.inner-column{
+	text-align: left;
+}
+.inner-column h1{
+	font-family: 'Rubik', sans-serif;
+	font-size: 30px;
+	color: #010101;
+	font-weight: 500;
+}
+		 
+.text-center{
+			 text-align: center;
+		 }
+
+
+		 .list{text-align: right;
+			 font-size: 10px;
+			 margin-left: -0px;
+			 	
+		 }
+		 
+		   #ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;  
+            overflow: hidden;
+            background-color: rgb(0, 0, 0);
+			color: white;
+        }
+		 #LD{
+			 text-align: center;
+			 font-family: Times New Roman, Times, serif;
+			 font-size: 35px;
+			 color: white;
+			 margin-top: 30px;
+		
+			 
+		 }
+		  
+		 .customer-reviews-box{
+			padding-left: 100px;
+			padding-bottom : 200px;
+			padding-right : 100px;
+			padding-top : 150px;
+		 }
+		 
+
+		 <!--Footer Start-->	 
+.copyright{
+	margin-top: 20px;
+	position:relative;
+	display: block;
+	border-top: 1px solid #ff0000;
+	/*padding: 30px 0;*/
+	z-index: 1;
+}
+
+.copyright .company-name{
+	
+	font-size: 16px;
+	text-align: center;
+	background-color: black;
+	color: rgb(255, 255, 255);
+
+}
+.copyright .company-name a{
+	
+	font-size: 16px;
+	color: rgb(255, 255, 255);
+}
+		 
+		 @media only screen and (min-width: 992px) and (max-width: 1180px) {
+	.footer-area h3{
+		font-size: 18px;
+	}
+}
+		 
+
+
+     </style>
+</head>
+
+<body>
+	<div>
+        <ul id="ul">
+
+        	<li><img src="images/logo.png" height="70px " width="150px" alt="Live Dinner logo" style="background-color: white; margin-left: 10px; margin-top: 9px;"></li>
+            
+            <h1 id="LD">LIVE DINNER RESTAURANT</h1>
+        </ul>
+    </div>
+
+    <ul class="list" >
+        <li><a href="index.html" class="barlist">HOME</a></li>
+        <li>
+            <a href="menu.html" class="barlist">MENU</a>
+          
+        </li>
+
+        <!--drop menu for News-->
+        <li class="dropdown">
+            <a class="dropbtn">PAGES</a>
+            <div class="dropdown-content">
+                <a href="staff.html" class="barlist">STAFF</a>
+                <a href="gallery.html" class="barlist">GALLERY</a>
+            </div>
+        </li>
+
+        <!--drop menu for About Us-->
+		<li>
+            <a href="blog.html" class="barlist">BLOG</a>
+        </li>
+		<li>
+            <a href="about.html" class="barlist">ABOUT</a>
+        </li>
+        
+        
+ 		<li>
+            <a href="contact.html" class="barlist">CONTACT</a>
+          
+        </li>
+		<li>
+            <a href="order_now.html" style="text-align: right; color:#008d2f;">Order Now</a>
+          
+        </li> 
+		<li style="float: right; padding-top: 1%; padding-right: 4%;">
+			<h1 class="h1Live">Welcome To <span>Live Dinner Restaurant</span></h1>
+		</li>   
+    </ul>
+	
+	<div class="about-section-box">
+		<div class="container">
+			<div>
+				<div class="text-center">
+					<div class="inner-column">
+						
+<!--SlideShow Start-->
+						<div class="slideshow-container" style="padding-left:25%; background-color: #000000;">
+
+							<div class="mySlides fade">
+							 
+							  <img src="images/slider-01.jpg" style="width:70%; height:500px;">
+							  
+							</div>
+							
+							<div class="mySlides fade">
+							  
+							  <img src="images/slider-02.jpg" style="width:70%; height: 500px;">
+							  
+							</div>
+							
+							<div class="mySlides fade">
+							 
+							  <img src="images/slider-03.jpg" style="width:70%; height: 500px;">
+							  
+							</div>
+							
+							<a class="prev" onclick="plusSlides(-1)">❮</a>
+							<a class="next" onclick="plusSlides(1)">❯</a>
+							
+							</div>
+							<br>
+							
+							<div style="text-align:center">
+							  <span class="dot" onclick="currentSlide(1)"></span> 
+							  <span class="dot" onclick="currentSlide(2)"></span> 
+							  <span class="dot" onclick="currentSlide(3)"></span> 
+							</div>
+							
+							<script>
+							let slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+  		let i;
+  		let slides = document.getElementsByClassName("mySlides");
+  		let dots = document.getElementsByClassName("dot");
+  		for (i = 0; i < slides.length; i++) {
+    		slides[i].style.display = "none";  
+  		}
+		slideIndex++;
+  		if (slideIndex > slides.length) {slideIndex = 1}    
+  		for (i = 0; i < dots.length; i++) {
+    		dots[i].className = dots[i].className.replace(" active", "");
+  		}
+  		slides[slideIndex-1].style.display = "block";  
+  		dots[slideIndex-1].className += " active";
+  		setTimeout(showSlides, 2000); // Change image every 2 seconds
+		}
+							</script>
+						<!--SlideShow End-->
+						<br><br>
+
+
+						<table>
+							<tr>
+								<td style="padding-left: 100px;"><img src="images/about-img.jpg" alt=""class="img-fluid" ></td>
+								<td style="padding-left: 100px; text-align: justify; padding-right: 10%;">
+									<p>Live Dinner’s, though not a small business, has faced some trough patches throughout their history, the most recent
+										being with their pizza and burger tasting like cardboard. To address this issue and how they turned their foods around,
+										Live Dinner’s released this article telling the story as to how they fixed their foods. 
+										brings the viewer behind the scenes to their test kitchen where the chefs and
+										company executives are interviewed and questioned about their terrible foods.
+										The story begins with focus
+										groups and negative reviews the company had to completely redefining their traditional foods in their test kitchens. 
+										Live Dinner’s reintroduces their brand to the public in this storytelling article and redefines their business for the future.
+									</p>
+								</td>
+							</tr>
+						</table>
+						
+						<br>
+						<br>
+						<!--<p>Live Dinner’s, though not a small business, has faced some trough patches throughout their history, the most recent
+							being with their pizza and burger tasting like cardboard. To address this issue and how they turned their foods around,
+							Live Dinner’s released this article telling the story as to how they fixed their foods. 
+							brings the viewer behind the scenes to their test kitchen where the chefs and
+							company executives are interviewed and questioned about their terrible foods.
+							The story begins with focus
+							groups and negative reviews the company had to completely redefining their traditional foods in their test kitchens. 
+							Live Dinner’s reintroduces their brand to the public in this storytelling article and redefines their business for the future.
+						</p>
+						<a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Reservation</a>
+					</div>
+				</div>
+				<div>
+					<img src="images/about-img.jpg" alt="" class="img-fluid">
+				</div>-->
+			</div>
+		</div>
+	</div>
+	
+	
+	<!--<div>
+		<div class="container">
+			<div class="row">
+				<div class="text-center">
+					<p class="lead ">
+						" If you're not the one cooking, stay out of the way and compliment the chef. "
+					</p>
+					<span class="lead">Michael Strahan</span>
+				</div>
+			</div>
+		</div>
+	</div>-->
+	
+							
+
+	<!-- End Menu -->
+	<!--Start Review-->
+	<div class="customer-reviews-box">
+		<div class="container">
+			<div>
+				<div class="col-lg-12">
+					<div class="heading-title text-center">
+						<h2>Customer Reviews</h2>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div>
+					<div>
+						<div>
+							<div style="text-align: center;">
+								<div>
+									<img src="images/quotations-button.png" alt="">
+								</div>
+								<h5><strong>Paul Mitchel</strong></h5>
+								<h6>Web Developer</h6>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
+							</div>
+							<div class="carousel-item text-center">
+								<div class="img-box p-1 border rounded-circle m-auto">
+									<img class="d-block w-100 rounded-circle" src="images/quotations-button.png" alt="">
+								</div>
+								<h5><strong>Steve Fonsi</strong></h5>
+								<h6>Web Designer</h6>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
+							</div>
+							<div class="carousel-item text-center">
+								<div class="img-box p-1 border rounded-circle m-auto">
+									<img class="d-block w-100 rounded-circle" src="images/quotations-button.png" alt="">
+								</div>
+								<h5><strong>Daniel vebar</strong></h5>
+								<h6>Seo Analyst</h6>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
+							</div>
+						</div>
+						
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--End Review-->
+<footer>
+	<!-- Start Footer -->
+	<div class="copyright">
+		<div class="container">
+			<div>
+				
+				<div class="company-name" style="margin-bottom: 0;"><span>All Rights Reserved. &copy; 2023 <a href="#">Live Dinner Restaurant</a> | Designed by Ansaf.</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Footer -->
+</footer>
+</body>
+</html>
